@@ -37,17 +37,17 @@ flowchart LR
 
 Bias Mitigation methodologies are strictly categorized based on where the technical intervention intersects the data preparation and model optimization pipeline.
 
-	### A. Pre-Processing Interventions (Data-Level Modifications)
+- ### A. Pre-Processing Interventions (Data-Level Modifications)
 	*   **Mechanism:** Modifies the training dataset configuration *before* optimization begins.
 	*   **Sub-Variants:**
 	    1.  *Re-weighting:* Dynamically scales the mathematical weight of training rows belonging to under-represented or historically marginalized groups inside the loss function.
 	    2.  *Disparate Impact Remover:* Edits individual column feature values to ensure the absolute marginal distributions across protected classes are statistically indistinguishable, erasing implicit proxy leakage.
 
-	### B. In-Processing Interventions (Algorithmic Regularization)
+- ### B. In-Processing Interventions (Algorithmic Regularization)
 	*   **Mechanism:** Modifies the neural network's loss function to explicitly punish discriminatory behavior during backpropagation.
 	*   **Adversarial Debiasing:** Trains the primary network alongside a secondary **Adversarial Network**. The primary network attempts to predict a downstream task (e.g., credit scoring), while the adversary attempts to guess the protected demographic trait from the primary model's hidden representation layers. The primary network is optimized to maximize task accuracy while minimizing the adversary’s ability to decode demographic traits.
 
-	### C. Post-Processing Interventions (Boundary Threshold Shifting)
+- ### C. Post-Processing Interventions (Boundary Threshold Shifting)
 	*   **Mechanism:** Leaves the fully trained model parameters completely untouched, intervening exclusively at the classification output gate.
 	*   **Equalized Odds Post-Processing:** Evaluates the continuous probability logits output by the model, dynamically shifting the decision cutoff threshold coordinates for different demographic groups independently to guarantee that False Positive Rates (FPR) and True Positive Rates (TPR) balance out across demographics.
 
