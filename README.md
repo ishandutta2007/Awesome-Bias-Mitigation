@@ -177,12 +177,6 @@ Before updating this documentation repository layout, let me know how you would 
 
 ---
 
-<div align="center">
-  <sub>✦ Built with ❤️ for fairness in AI · ⚖️ Bias Mitigation Research · 🧠 2025+ ✦</sub>
-</div>
-
----
-
 ## ⭐ Star History
 
 <div align="center">
@@ -193,4 +187,10 @@ Before updating this documentation repository layout, let me know how you would 
       <img alt="Star History Chart for Awesome-Bias-Mitigation repository" src="https://api.star-history.com/chart?repos=ishandutta2007/Awesome-Bias-Mitigation&type=date&legend=bottom-right" />
     </picture>
   </a>
+</div>
+
+---
+
+<div align="center">
+  <sub>✦ Built with ❤️ for fairness in AI · ⚖️ Bias Mitigation Research · 🧠 2025+ ✦</sub>
 </div>
