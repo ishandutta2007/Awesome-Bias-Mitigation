@@ -186,7 +186,7 @@ Before updating this documentation repository layout, let me know how you would 
 ## ⭐ Star History
 
 <div align="center">
-  <a href="https://www.star-history.com/#Awesome-Bias-Mitigation&type=date&legend=bottom-right">
+  <a href="https://www.star-history.com/?repos=ishandutta2007%2FAwesome-Bias-Mitigation&type=date&legend=bottom-right">
     <picture>
       <source media="(prefers-color-scheme: dark)" srcset="https://api.star-history.com/chart?repos=ishandutta2007/Awesome-Bias-Mitigation&type=date&theme=dark&legend=bottom-right" />
       <source media="(prefers-color-scheme: light)" srcset="https://api.star-history.com/chart?repos=ishandutta2007/Awesome-Bias-Mitigation&type=date&legend=bottom-right" />
