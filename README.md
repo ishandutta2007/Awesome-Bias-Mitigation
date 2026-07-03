@@ -12,7 +12,11 @@ Bias mitigation intervenes across the machine learning lifecycle—partitioning 
 The technical framework governing algorithmic fairness has transitioned from manual feature deletion to structured mathematical optimization constraints, moving toward large-scale foundation model alignment and test-time guardrail architectures.
 
 ```mermaid
-[Fairness via Blindness (Pre-2016)] ───> [Lifecycle Optimization (AIF360, 2018)] ───> [Preference Alignment (RLHF/DPO, 2023)] ───> [Ecosystem Alignment Enclaves (2025+)](Naive Feature Drop/Proxy Leaks)         (Pre/In/Post-Processing Constraints)          (Semantic Preference Guardrail Buffers)        (Continuous Multimodal Interventions)
+flowchart LR
+    A["Fairness via Blindness (Pre-2016)<br/>(Protected Attribute Removal)"]
+    --> B["Lifecycle Fairness Optimization (AIF360, 2018)<br/>(Pre-, In-, and Post-Processing Mitigation)"]
+    --> C["Preference Alignment (RLHF / DPO, 2023)<br/>(Human Preference Optimization)"]
+    --> D["Ecosystem Alignment Frameworks (2025+)<br/>(Continuous Multimodal Alignment & Monitoring)"]
 ```
 
 *   **The Fairness Through Blindness Era (Traditional ML, Pre-2016)**
@@ -64,7 +68,21 @@ To systematically mitigate bias, engineering frameworks enforce rigid, quantitat
 
 
 ```mermaid
-The Algorithmic Fairness Matrix┌───────────────────────┐│   Raw Input Tensors   │└───────────┬___________┘│┌───────────────────────┼───────────────────────┐▼                       ▼                       ▼Pre-Processing          In-Processing            Post-Processing(Data Re-weighting)     (Adversarial Losses)     (Threshold Shifting)│                       │                       │└───────────────────────┼───────────────────────┘│▼Quantified Fairness Evaluation(Demographic Parity / Eq. Odds)
+flowchart TB
+
+subgraph F["The Algorithmic Fairness Matrix"]
+    A["Raw Input Tensors"]
+
+    A --> B["Pre-Processing<br/>(Re-weighting / Re-sampling)"]
+    A --> C["In-Processing<br/>(Adversarial or Fairness-Constrained Training)"]
+    A --> D["Post-Processing<br/>(Threshold Adjustment / Calibration)"]
+
+    B --> E["Quantified Fairness Evaluation"]
+    C --> E
+    D --> E
+
+    E --> F1["Demographic Parity<br/>Equalized Odds<br/>Equal Opportunity"]
+end
 ```
 
 
