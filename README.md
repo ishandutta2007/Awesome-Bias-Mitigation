@@ -1,6 +1,19 @@
+<!--
+  ============================================================
+  Awesome-Bias-Mitigation
+  Description: A comprehensive curated guide on bias mitigation
+  in AI — covering history, algorithmic variants, fairness
+  quantification metrics, production challenges, and real-world
+  applications across credit, recruitment, and healthcare.
+  Keywords: bias mitigation, AI fairness, algorithmic fairness,
+  demographic parity, equalized odds, adversarial debiasing,
+  RLHF, DPO, sparse autoencoders, machine learning ethics
+  ============================================================
+-->
+
 <div align="center">
 
-  <img src="assets/banner.svg" alt="Awesome-Bias-Mitigation Banner" width="100%">
+  <img src="assets/banner.svg" alt="Awesome-Bias-Mitigation — A Comprehensive Guide to Bias Mitigation in Artificial Intelligence: History, Progression, Variants, and Applications" width="100%">
 
   <br><br>
 
@@ -15,13 +28,36 @@
     <a href="#-frontier-real-world-ai-mitigation-applications">🌍 Applications</a>
   </p>
 
+  <!-- Badges Row -->
+  <p align="center">
+    <!-- Left badges -->
+    <a href="https://github.com/ishandutta2007/Awesome-Awesome-Awesome"><img src="https://img.shields.io/badge/Awesome-%E2%9C%94-blueviolet?style=flat-square&logo=github" alt="Awesome"/></a>
+    <a href="https://discord.gg/jc4xtF58Ve"><img src="https://img.shields.io/badge/Discord-5865F2?style=for-the-badge&logo=discord&logoColor=white" alt="Discord" /></a>
+    &nbsp;&nbsp;&nbsp;&nbsp;
+    <!-- Right badge -->
+    <a href="https://github.com/ishandutta2007"><img alt="GitHub followers" src="https://img.shields.io/github/followers/ishandutta2007?label=Follow" /></a>
+  </p>
+
 </div>
 
 ---
 
-Bias Mitigation is an engineering and sociotechnical framework in artificial intelligence designed to **identify** 🔍, **quantify** 📐, and **minimize** 🎯 systematic, unfair, or discriminatory disparities in model predictions across protected demographic groups (such as race 🌍, gender ♀️♂️, age 🎂, or socioeconomic status 💰). In machine learning, algorithms natively optimize for statistical patterns embedded within data. If the historical data contains human prejudices, systemic inequalities, or unrepresentative sampling anomalies, the model will internalize and amplify these disparities. 🚨
+> **📖 What is Bias Mitigation?** Bias Mitigation is an engineering and sociotechnical framework in artificial intelligence designed to **identify** 🔍, **quantify** 📐, and **minimize** 🎯 systematic, unfair, or discriminatory disparities in model predictions across protected demographic groups (such as race 🌍, gender ♀️♂️, age 🎂, or socioeconomic status 💰). In machine learning, algorithms natively optimize for statistical patterns embedded within data. If the historical data contains human prejudices, systemic inequalities, or unrepresentative sampling anomalies, the model will internalize and amplify these disparities. 🚨
 
-Bias mitigation intervenes across the machine learning lifecycle—**partitioning datasets** ✂️, **altering optimization loss functions** ⚙️, or **shifting decision thresholds** 🎚️ post-hoc—to ensure model outputs align with quantitative fairness metrics without destroying global predictive accuracy. ✅
+Bias mitigation intervenes across the **machine learning lifecycle**—**partitioning datasets** ✂️, **altering optimization loss functions** ⚙️, or **shifting decision thresholds** 🎚️ post-hoc—to ensure model outputs align with quantitative fairness metrics without destroying global predictive accuracy. ✅
+
+---
+
+## 🔑 Key Topics
+
+| 🏷️ Topic | 📝 Description |
+| :--- | :--- |
+| ⚖️ **Algorithmic Fairness** | Techniques to ensure ML models treat all demographic groups equitably |
+| 🧹 **Pre-Processing** | Data-level bias mitigation: re-weighting, re-sampling, disparate impact removal |
+| 🔧 **In-Processing** | Model-level regularization via adversarial debiasing and fair loss functions |
+| 🎚️ **Post-Processing** | Threshold shifting and calibration for equalized odds |
+| 🧬 **SAE Steering** | Sparse autoencoder-based runtime bias suppression for LLMs |
+| 🎯 **RLHF / DPO** | Preference optimization alignment for foundation models |
 
 ---
 
@@ -143,4 +179,18 @@ Before updating this documentation repository layout, let me know how you would 
 
 <div align="center">
   <sub>✦ Built with ❤️ for fairness in AI · ⚖️ Bias Mitigation Research · 🧠 2025+ ✦</sub>
+</div>
+
+---
+
+## ⭐ Star History
+
+<div align="center">
+  <a href="https://www.star-history.com/#Awesome-Bias-Mitigation&type=date&legend=bottom-right">
+    <picture>
+      <source media="(prefers-color-scheme: dark)" srcset="https://api.star-history.com/chart?repos=ishandutta2007/Awesome-Bias-Mitigation&type=date&theme=dark&legend=bottom-right" />
+      <source media="(prefers-color-scheme: light)" srcset="https://api.star-history.com/chart?repos=ishandutta2007/Awesome-Bias-Mitigation&type=date&legend=bottom-right" />
+      <img alt="Star History Chart for Awesome-Bias-Mitigation repository" src="https://api.star-history.com/chart?repos=ishandutta2007/Awesome-Bias-Mitigation&type=date&legend=bottom-right" />
+    </picture>
+  </a>
 </div>
